@@ -1,2 +1,2 @@
-# FoodStar
+# FoodSta
 SuperFood
