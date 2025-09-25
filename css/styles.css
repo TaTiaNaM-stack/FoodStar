@@ -8,6 +8,7 @@ body{
     font-weight: weight;
     font-style: normal;
     font-variation-settings: "wdth";
+    background-color: #fefefe;
 }
 
 section {
@@ -102,11 +103,14 @@ header{
     color: #bbf330;
 }
 
-.header-btn{
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     border: none;
     padding: 6px 17px;
-    min-width: 103px;
+    width: 103px;
     height: 32px;
     background-color: #bbf330;
     font-weight: 500;
@@ -118,7 +122,7 @@ header{
     color: #2c2c2c;
 }
 
-.header-btn:hover{
+.btn:hover{
     background-color: #b5ff00;
 }
 
@@ -156,8 +160,9 @@ header{
    flex-direction: column;
 }
 
-.hero-container{
-    display: flex;
+.cont-sec-hero{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title{
@@ -178,12 +183,136 @@ header{
     margin: 28px 0;    
 }
 
-.scroll-meal{
-    display: flex;
+.hero-btn{
+    margin-bottom: 50px;
 }
 
-/* @media screen and (min-width: 1158px){
+.scroll-meal{
+    display: none;
+}
 
-} */
+@media screen and (min-width: 768px){
+
+    /*hero*/
+
+    .hero-container{
+        position: relative;
+    }
+
+    .hero-title{
+        min-width: 537px;
+        font-size: 42px;
+    }
+
+    .cont-sec-1{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .hero-txt{
+        max-width: 336px;
+        font-size: 16px;
+    }
+
+    .hero-btn{
+        margin-bottom: 72px;
+    }
+
+    .scroll-meal{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        right: 32px;
+    }
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 28px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: #ffff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.left{
+    left: -8px;
+}
+
+.right{
+    right: -8px;    
+}
+
+.scroll:hover{
+    stroke: #7eb101;
+}
+
+.scroll:active{
+    stroke: #2c2c2c;
+}
+
+.scroll{
+    stroke: #2c2c2c;
+}
+
+.round{
+    border-radius: 148px;
+    width: 292px;
+    height: 292px;
+    border: 14px solid #ffe550;
+    background-color: #fefefe;
+}
+
+
+}
+
+@media screen and (min-width: 1158px){
+
+    /*hero*/
+
+    .hero{
+        margin-top: 0;
+    }
+
+    .cont-sec-hero{
+        margin-top: 159px;
+
+    }
+
+    .hero-title{
+        min-width: 503px;
+        font-size: 48px;
+    }
+
+    .hero-txt{
+        min-width: 502px;
+    }
+
+    .hero-btn{
+        margin-bottom: 164px;
+    }
+
+    .btn{
+        min-width: 98px;
+    }
+
+    .scroll-meal{
+        top: 14px;
+        right: 16px;
+    }
+
+    .round{
+        border-radius: 269px;
+        width: 528px;
+        height: 528px;
+        top: 0;
+        right: 0;
+    }
+
+}
 
 
