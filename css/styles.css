@@ -589,4 +589,59 @@ header{
 
 @media screen and (min-width: 1158px){
 
+    /*section-2 apple*/
+
+    .apple-container{
+        display: flex;
+        gap: 90px;
+        margin-left: 0;
+    }
+
+    .up-2{
+        display: none;
+    }
+
+    .up-3{
+        display: block;
+        position: absolute;
+        top: -110px;
+        right: 0;
+    }
+
+    .apple-1,
+    .apple-2{
+        display: none;
+    }
+
+    .apple-round{
+        width: 550px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apple-border{
+        width: 540px;
+        height: 540px;
+        border: #ffe550 24px solid;
+    }
+
+    .apple{
+        width: 396px;
+        height: 502px;
+        bottom: 78px;
+    }
+
+    .apple-list{
+        gap: 67px;
+        margin-bottom: 48px;
+    }
+
+    .apple-item{
+        max-width: 300px;
+    }
+
+    .apple-btns{
+        margin-bottom: 164px;
+    }
 }
