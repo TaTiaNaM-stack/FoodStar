@@ -697,8 +697,18 @@ header{
     height: 282px;
 }
 
+.meals-item:hover{
+    border-color: #bbf330;
+}
+
 .mob-none{
     display: none;
+}
+
+.meal-foto{
+    width: 223px;
+    height: 223px;
+    border-radius: 100%;
 }
 
 @media screen and (min-width: 768px){
