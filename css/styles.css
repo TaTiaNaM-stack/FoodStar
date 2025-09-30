@@ -514,6 +514,14 @@ header{
 
     /*section-2 apple*/
 
+    .apple-section{
+        padding-bottom: 100px;
+    }
+
+    .apple-container{
+        padding-bottom: 100px;
+    }
+
     .up-1{
         display: none;
     }
@@ -591,10 +599,15 @@ header{
 
     /*section-2 apple*/
 
+    .apple-section{
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
     .apple-container{
         display: flex;
         gap: 90px;
-        margin-left: 0;
+        padding-bottom: 0;
     }
 
     .up-2{
@@ -634,7 +647,7 @@ header{
 
     .apple-list{
         gap: 67px;
-        margin-bottom: 48px;
+        margin-bottom: 32px;
     }
 
     .apple-item{
@@ -642,15 +655,19 @@ header{
     }
 
     .apple-btns{
-        margin-bottom: 164px;
+        margin-bottom: 0px;
+    }
+
+    .read-more{
+        display: none;
     }
 }
 
 /*section-3 meals*/
 
 .meals{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .meals-container{
@@ -714,6 +731,31 @@ header{
 @media screen and (min-width: 768px){
 
     /*section-3 meals*/
+
+
+    .meals-title{
+        font-weight: 700;
+        font-size: 42px;
+        text-align: center;
+        color: #2c2c2c;
+    }
+
+    .meals-txt{
+        font-size: 16px;
+        max-width: 656px;
+        margin-bottom: 60px;
+    }
+
+    .mob-none{
+        display: flex;
+    }
+
+    .meals-list{
+        flex-direction: row;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 
 }
