@@ -300,7 +300,7 @@
                     <form class="banana-form">
                         <label class="banana-label" for="user-mail">
                           <input 
-                            class="banana-input"
+                            class="input"
                             type="email" 
                             placeholder="Enter your email"
                             name="user-mail"
@@ -314,41 +314,56 @@
             </div>
         </section>
     </main>
-    <footer class="">
-        <div class="">
-            <svg class="logo" width="66" height="52">
-                <use href="./images/icon.svg#icon-logo"></use>
-            </svg> 
-            <nav class="">
-              <a class="soc-footer gap" href="#home">Home</a>
-              <a class="soc-footer gap" href="#made">About</a>
-              <a class="soc-footer gap" href="#loved">Service</a>
-              <a class="soc-footer gap" href="#loved">Menu</a>
-              <a class="soc-footer gap" href="#loved"Contact></a>
-            </nav>
-            <div class="">
-                <p class="">Subscribe</p>
-                <form class="">
-                    <label class="" for="user-mail">
-                        <input
-                          class=""
-                          type="email"
-                          placeholder="Enter your email"
-                          name="user-mail"
-                          id="mail-user"
-                          required
-                          />
-                    </label>
-                    <button class="" type="submit">Subscribe</button>
-                </form>
-                <p class="">By subscribing you agree to with our <a class="soc-footer gap" href="#home">Privacy Policy</a></p>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-background">
+                <picture class="footer-pic">
+                    <source media="(min-width: 1158px)" srcset="./images/jpg-img/fruit-footer-pc.jpg 1x, ./images/jpg-img/fruit-footer-pc-2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/jpg-img/fruit-footer-tab.jpg 1x, ./images/jpg-img/fruit-footer-tab-2x.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/jpg-img/fruit-footer-mob.jpg 1x, ./images/jpg-img/fruit-footer-mob-2x.jpg 2x">
+                    <img
+                        class="footer-img"
+                        src="./images/jpg-img/fruit-footer-pc.jpg"
+                        alt="footer-background"/>
+                </picture>
             </div>
-            <nav class="">
-              <a class="soc-footer gap" href="#home">Privacy Policy</a>
-              <a class="soc-footer gap" href="#made">Terms of Service</a>
-              <a class="soc-footer gap" href="#loved">Cookies Settings</a>
-            </nav>
-            <p class="">2022 FoodSta. All right reserved.</p>
+            <div class="footer-content">
+                <div class="footer-up">
+                    <svg class="logo logo-dwn" width="66" height="52">
+                        <use href="./images/icon.svg#icon-logo"></use>
+                    </svg> 
+                    <nav class="footer-nav">
+                        <a class="soc-footer" href="#home">Home</a>
+                        <a class="soc-footer" href="#made">About</a>
+                        <a class="soc-footer" href="#loved">Service</a>
+                        <a class="soc-footer" href="#loved">Menu</a>
+                        <a class="soc-footer" href="#loved"Contact></a>
+                    </nav>
+                </div>
+                <div class="footer-form">
+                    <p class="footer-subscribe">Subscribe</p>
+                    <form class="footer-info">
+                        <label class="footer-label" for="user-mail">
+                            <input
+                            class="input"
+                            type="email"
+                            placeholder="Enter your email"
+                            name="user-mail"
+                            id="mail-user"
+                            required
+                            />
+                        </label>
+                        <button class="btn-white" type="submit">Subscribe</button>
+                    </form>
+                    <p class="form-a">By subscribing you agree to with our <a class="green-a" href="#home">Privacy Policy</a></p>
+                </div>
+                <nav class="green-nav">
+                    <a class="green-a" href="#home">Privacy Policy</a>
+                    <a class="green-a" href="#made">Terms of Service</a>
+                    <a class="green-a" href="#loved">Cookies Settings</a>
+                </nav>
+                <p class="last-txt">2022 FoodSta. All right reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
