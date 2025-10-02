@@ -1078,6 +1078,16 @@ header{
 
     /*section-5 banana*/
 
+    .banana-container{
+        justify-content: left;
+    }
+
+    .banana-foto{
+        width: 608px;
+        height: 266px;
+        right: 50px;
+        top: -75px;
+    }
 
 }
 
