@@ -1254,3 +1254,28 @@ header{
 
 }
 
+@media screen and (min-width: 1158px){
+
+    /*footer*/
+
+    .footer-container{
+        padding: 129px 16px 0 53px;
+    }
+
+    .footer-pic{
+        width: 1211px;
+        height: 256px;
+    }
+
+    .footer-content{
+        min-width: 1247px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-up{
+        gap: 148px;
+    }
+}
+
