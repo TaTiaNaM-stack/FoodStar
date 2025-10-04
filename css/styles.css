@@ -626,8 +626,10 @@ header{
     .up-3{
         display: block;
         position: absolute;
-        top: -110px;
-        right: 0;
+        top: -160px;
+        right: -55px;
+        min-width: 1280px;
+        height: 824px;
     }
 
     .apple-1,
@@ -934,6 +936,7 @@ header{
     .down-3{
         display: flex;
         position: absolute;
+        min-width: 1280px;
     }
 
     .reviews-content{
@@ -1086,17 +1089,16 @@ header{
     .banana-foto{
         width: 608px;
         height: 266px;
-        right: 50px;
-        top: -75px;
+        right: -50px;
+        top: 0;
     }
 
 }
 
 /*footer*/
 
-.footer{
+ .footer{
     box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
-    position: relative;
 }
 
 .footer-container{
@@ -1141,7 +1143,7 @@ header{
     font-size: 14px;
 
     /* line-height: 21px; */ 
-    line-height: 150%;
+     line-height: 150%;
     color: #2c2c2c;
     margin-bottom: 20px;
 }
@@ -1151,6 +1153,10 @@ header{
     flex-direction: column;
     margin-bottom: 20px;
     align-items: flex-end;
+}
+
+.input{
+    background-color: transparent;
 }
 
 .form-a{
@@ -1191,14 +1197,17 @@ header{
 @media screen and (min-width: 768px){
 
     /*footer*/
-
+ 
     .footer-container{
         justify-content: left;
+        padding: 0;
+        position: relative;
     }
 
     .footer-content{
         max-width: 768px;
         top: 100px;
+        left: 50px;
         
     }
 
@@ -1258,7 +1267,7 @@ header{
 
     /*footer*/
 
-    .footer-container{
+     .footer-container{
         padding: 129px 16px 0 53px;
     }
 
@@ -1271,11 +1280,32 @@ header{
         min-width: 1247px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
-    .footer-up{
-        gap: 148px;
+    .input{
+        width: 279px;
     }
-}
 
+    .footer-up{        
+        align-items: normal;
+    }
+
+    .footer-nav{
+        margin-top: 18px;
+    }
+
+    .footer-form{
+        margin-left: 320px;
+    }
+
+    .form-a{
+        margin-bottom: 80px;
+    }
+
+    .last-txt{
+        position: static;
+        margin-left: 730px;
+    }
+}  
+ 
