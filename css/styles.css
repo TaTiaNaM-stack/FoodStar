@@ -147,7 +147,7 @@ header{
 }
 
 .mobil-menu{
-    position: fixed;
+    position: absolute;
     top: 50px;
     right: 20px;
     border-radius: 30px 0 30px 30px;
@@ -192,6 +192,10 @@ header{
 
 .up-item{
     border-radius: 30px 0 0 0;
+}
+
+.down-item{
+    border-radius: 0 0 30px 30px;
 }
 
 @media screen and (min-width: 768px){
@@ -1363,4 +1367,134 @@ header{
         margin-left: 730px;
     }
 }  
+
+/*modal*/
+
+.backdrop.is-visible{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    width: 320px;
+    height: 449px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    background: #ffe550;
+    padding: 32px 16px;
+}
+
+.modal-round{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+}
  
+.close-modal{
+    width: 24px;
+    min-height: 24px;
+    background-color: transparent;
+    border: none;  
+    display: flex;
+    align-items: center;  
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-txt{
+    font-weight: 700;
+    font-size: 24px;
+
+    /* line-height: 29px; */ 
+    line-height: 120%;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.modal-label{
+    font-weight: 500;
+    font-size: 16px;
+
+    /* line-height: 22px; */ 
+    line-height: 140%;
+    color: #2c2c2c;
+}
+
+.input-mod{
+    border: 1px solid #7eb101;
+    border-radius: 30px;
+    width: 280px;
+    height: 48px;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    padding: 14px 12px;
+    margin-top: 2px;
+    margin-bottom: 24px;
+}
+
+.input-last{
+    margin-bottom: 32px;
+}
+
+.modal-btn:hover{
+    background-color: #bbf330;
+    border: 2px solid #7eb101;
+}
+
+@media screen and (min-width: 768px){
+
+    /*modal*/
+
+    .modal{
+        width: 458px;
+        padding: 32px;
+    }
+
+    .input-mod{
+        width: 394px;
+    }
+}
+
+@media screen and (min-width: 1158px){
+
+    /*modal*/
+
+}
+
+
+
