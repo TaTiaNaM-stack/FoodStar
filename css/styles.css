@@ -209,6 +209,10 @@ header{
     .burger{
         display: none;
     }
+
+    .mobil-menu{
+        display: none;
+    }
 }
 
 /*hero*/
