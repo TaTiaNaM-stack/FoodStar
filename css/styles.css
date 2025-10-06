@@ -140,6 +140,60 @@ header{
     fill: #ffe550;
 }
 
+.mobil-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobil-menu{
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    border-radius: 30px 0 30px 30px;
+    width: 130px;
+    height: 255px;
+    box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+    background-color: #fefefe;
+    z-index: 10;
+}
+
+.close-btn{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: transparent;
+    border: none;
+}
+
+.mobil-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.mob-item{
+    padding: 16px 41px 16px 16px;
+    width: 130px;
+    height: 51px;
+}
+
+.mobil-link{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.mob-item:hover,
+.mob-item:focus{
+    background-color: #bbf330;
+}
+
+.up-item{
+    border-radius: 30px 0 0 0;
+}
+
 @media screen and (min-width: 768px){
 
     /*header*/
@@ -1104,6 +1158,7 @@ header{
 .footer-container{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .footer-content{
