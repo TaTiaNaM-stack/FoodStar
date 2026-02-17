@@ -9,6 +9,15 @@ body{
     font-style: normal;
     font-variation-settings: "wdth";
     background-color: #fefefe;
+    padding-top: 70px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Щоб перекривати інший контент */
 }
 
 section {
